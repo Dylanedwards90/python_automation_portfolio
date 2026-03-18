@@ -4,33 +4,46 @@ Created on Mon Mar 16 07:54:23 2026
 
 @author: Dylan
 """
-
-import pytest 
+import allure
 from pages.login_page import LoginPage
-from utils.driver_factory import get_driver
+from config.config import VALID_USERNAME, VALID_PASSWORD
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 
-@pytest.fixture
-def driver():
-    driver = get_driver()
-    yield driver
-    driver.quit()
 
+@allure.title("Valid Login Test")
+@allure.description("Verify that a user can log in with valid credentials")
 def test_valid_login(driver):
 
     login = LoginPage(driver)
 
-    login.open()
-    login.enter_username("tomsmith")
-    login.enter_password("SuperSecretPassword!")
-    login.click_login()
+    login.login(VALID_USERNAME, VALID_PASSWORD)
+
     
-    # WAIT for the success message to appear
-    WebDriverWait(driver, 10).until(
-        EC.visibility_of_element_located((By.ID, "flash"))
-    )
+    message = driver.find_element(By.ID, "flash").text
 
+    assert "You logged into a secure area!" in message
+    
+@allure.title("Invalid Login Test")
+@allure.description("Verify login fails with invalid credentials")
+def test_invalid_login(driver):
 
-    assert "secure" in driver.current_url
+    login = LoginPage(driver)
+
+    login.login("wrong_user","wrong_password")
+
+    message = driver.find_element(By.ID, "flash").text
+
+    assert "Your username is invalid!" in message
+    
+@allure.title("Empty Login Test")
+@allure.description("Verify login fails with no credentials entered")
+def test_empty_login(driver):
+
+    login = LoginPage(driver)
+
+    login.login("","")
+    
+    message = driver.find_element(By.ID, "flash").text
+
+    assert "Your username is invalid!" in message
+    
