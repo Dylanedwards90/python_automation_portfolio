@@ -9,7 +9,7 @@ from pathlib import Path
 import pandas as pd
 
 from config.settings import INPUT_FILE, OUTPUT_FILE, MINIMUM_SCORE_TO_EXPORT
-from utils.scorer import score_job, recommend
+from utils.scorer import score_job, recommend, get_matched_keywords
 
 
 def main():
@@ -17,6 +17,17 @@ def main():
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
     df = pd.read_csv(INPUT_FILE)
+
+    df["matched_keywords"] = df.apply(
+        lambda row: ", ".join(
+            get_matched_keywords(
+                str(row["title"]),
+                str(row["skills"]),
+                str(row["description"]),
+            )
+        ),
+        axis=1,
+    )
 
     df["score"] = df.apply(
         lambda row: score_job(
@@ -35,7 +46,11 @@ def main():
     filtered_df.to_csv(OUTPUT_FILE, index=False)
 
     print("\nJob ranking complete.\n")
-    print(filtered_df[["title", "score", "recommendation"]].to_string(index=False))
+    print(
+        filtered_df[
+            ["title", "score", "recommendation", "matched_keywords"]
+        ].to_string(index=False)
+    )
 
     print("\nSummary:")
     print(f"Total jobs processed: {len(df)}")
