@@ -1,0 +1,10 @@
+Job Lead Monitor Summary
+========================
+Total jobs processed: 5
+Jobs after deduplication: 5
+Jobs exported: 3
+High Fit jobs: 2
+Medium Fit jobs: 1
+Low Fit jobs: 0
+Minimum recommendation exported: Medium Fit
+CSV output file: jobs_input_ranked_jobs_2026-03-24.csv

@@ -25,6 +25,8 @@ MINIMUM_SCORE_TO_EXPORT = 1
 MINIMUM_RECOMMENDATION_TO_EXPORT = "Medium Fit"
 
 INPUT_FILE = "input/jobs_input.csv"
+INPUT_DIR = 'input'
+PROCESSED_DIR = 'processed'
 OUTPUT_DIR = "output"
 OUTPUT_FILE_PREFIX = "ranked_jobs"
 SUMMARY_FILE_PREFIX = "summary"
