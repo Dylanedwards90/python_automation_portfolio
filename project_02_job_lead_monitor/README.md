@@ -1,14 +1,15 @@
 # Job Lead Monitor
 
-This project is a Python automation tool that reads job listings from a CSV file, scores them based on keyword relevance, and exports a ranked list of leads.
+A Python automation project that reads job listings from CSV, scores them against target keywords, and exports a ranked list of opportunities.
 
 ## Features
 - Reads job data from CSV
-- Scores opportunities based on fit
+- Scores each listing based on configurable keywords
 - Labels jobs as High Fit, Medium Fit, or Low Fit
-- Exports ranked leads to a new CSV
+- Exports ranked results to CSV
+- Prints a simple summary in the console
 
-## Tech Used
+## Tech Stack
 - Python
 - Pandas
 
