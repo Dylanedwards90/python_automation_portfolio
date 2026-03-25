@@ -30,4 +30,6 @@ PROCESSED_DIR = 'processed'
 OUTPUT_DIR = "output"
 OUTPUT_FILE_PREFIX = "ranked_jobs"
 SUMMARY_FILE_PREFIX = "summary"
+FAILED_DIR = 'failed'
+
 TOP_RESULTS_TO_DISPLAY = 10

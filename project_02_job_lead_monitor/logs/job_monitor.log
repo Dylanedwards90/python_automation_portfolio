@@ -1,0 +1,48 @@
+2026-03-25 05:52:39,912 - INFO - 
+Finished processing: ranked_jobs.csv
+
+2026-03-25 05:52:39,913 - INFO -                         title  score recommendation                             matched_keywords
+Python Selenium QA Automation     14       High Fit python, selenium, automation, qa, regression
+     Playwright Test Engineer     10       High Fit      python, automation, playwright, testing
+          Web Scraping Expert      8     Medium Fit         python, scraping, beautifulsoup, csv
+2026-03-25 05:52:39,916 - INFO - 
+Saved CSV to: output\ranked_jobs_ranked_jobs_2026-03-25.csv
+2026-03-25 05:52:39,916 - INFO - Saved summary to: output\ranked_jobs_summary_2026-03-25.txt
+2026-03-25 05:52:39,918 - INFO - Moved input file to: processed/ranked_jobs.csv
+
+2026-03-25 05:53:09,558 - INFO - 
+Finished processing: ranked_jobs.csv
+
+2026-03-25 05:53:09,559 - INFO -                         title  score recommendation                             matched_keywords
+Python Selenium QA Automation     14       High Fit python, selenium, automation, qa, regression
+     Playwright Test Engineer     10       High Fit      python, automation, playwright, testing
+          Web Scraping Expert      8     Medium Fit         python, scraping, beautifulsoup, csv
+2026-03-25 05:53:09,559 - INFO - 
+Saved CSV to: output\ranked_jobs_ranked_jobs_2026-03-25.csv
+2026-03-25 05:53:09,559 - INFO - Saved summary to: output\ranked_jobs_summary_2026-03-25.txt
+2026-03-25 05:53:09,562 - INFO - Moved input file to: processed/ranked_jobs.csv
+
+2026-03-25 05:56:40,185 - INFO - 
+Finished processing: ranked_jobs.csv
+
+2026-03-25 05:56:40,187 - INFO -                         title  score recommendation                             matched_keywords
+Python Selenium QA Automation     14       High Fit python, selenium, automation, qa, regression
+     Playwright Test Engineer     10       High Fit      python, automation, playwright, testing
+          Web Scraping Expert      8     Medium Fit         python, scraping, beautifulsoup, csv
+2026-03-25 05:56:40,187 - INFO - 
+Saved CSV to: output\ranked_jobs_ranked_jobs_2026-03-25.csv
+2026-03-25 05:56:40,187 - INFO - Saved summary to: output\ranked_jobs_summary_2026-03-25.txt
+2026-03-25 05:56:40,189 - INFO - Moved input file to: processed/ranked_jobs.csv
+
+2026-03-25 05:57:00,518 - INFO - 
+Finished processing: ranked_jobs.csv
+
+2026-03-25 05:57:00,520 - INFO -                         title  score recommendation                             matched_keywords
+Python Selenium QA Automation     14       High Fit python, selenium, automation, qa, regression
+     Playwright Test Engineer     10       High Fit      python, automation, playwright, testing
+          Web Scraping Expert      8     Medium Fit         python, scraping, beautifulsoup, csv
+2026-03-25 05:57:00,520 - INFO - 
+Saved CSV to: output\ranked_jobs_ranked_jobs_2026-03-25.csv
+2026-03-25 05:57:00,520 - INFO - Saved summary to: output\ranked_jobs_summary_2026-03-25.txt
+2026-03-25 05:57:00,522 - INFO - Moved input file to: processed/ranked_jobs.csv
+
